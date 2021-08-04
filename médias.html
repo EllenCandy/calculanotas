@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+        function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var materia = prompt("informe a matéria");
+
+var nota1 = parseInt(prompt("nota do primeiro trimestre"));
+
+var nota2 = parseInt(prompt("nota do segundo trimestre"));
+
+var nota3 = parseInt(prompt("nota do terceiro trimestre"));
+
+var media = (Math.round((nota1 + nota2 + nota3)) / 3);
+
+mostra("Sua média de " + materia + " foi " + media);
+
+</script>
